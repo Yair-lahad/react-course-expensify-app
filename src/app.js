@@ -17,7 +17,7 @@ const store = configureStore();
 //   console.log(visibleExpenses);
 // });
 
-// hoc 
+// hoc
 const jsx = (
   <Provider store={store}>
     <AppRouter />
