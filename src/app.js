@@ -11,19 +11,11 @@ import "normalize.css/normalize.css";
 import "./styles/styles.scss";
 
 const store = configureStore();
-store.subscribe(() => {
-  const state = store.getState();
-  const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
-  console.log(visibleExpenses);
-});
-store.dispatch(addExpense({ description: "Water bill", amount:100, createdAt: -100 }));
-store.dispatch(addExpense({ description: "Gas bill", amount:300, createdAt: 100 }));
-store.dispatch(addExpense({ description: "Rent", amount:10000, createdAt: -1000 }));
-// store.dispatch(setTextFilter("water"));
-// setTimeout(() => {
-//   store.dispatch(setTextFilter("bill"));
-// }, 3000);
-
+// store.subscribe(() => {
+//   const state = store.getState();
+//   const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
+//   console.log(visibleExpenses);
+// });
 
 // hoc 
 const jsx = (
