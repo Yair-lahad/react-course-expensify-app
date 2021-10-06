@@ -3,12 +3,11 @@
 exports[`should render Header 1`] = `
 <header>
   <h1>
-     Expensify
+    Expensify
   </h1>
   <div>
     <NavLink
       activeClassName="is-active"
-      ariaCurrent="true"
       exact={true}
       to="/"
     >
@@ -16,14 +15,12 @@ exports[`should render Header 1`] = `
     </NavLink>
     <NavLink
       activeClassName="is-active"
-      ariaCurrent="true"
       to="/create"
     >
       Create Expense
     </NavLink>
     <NavLink
       activeClassName="is-active"
-      ariaCurrent="true"
       to="/help"
     >
       Help

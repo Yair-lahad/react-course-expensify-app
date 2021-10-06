@@ -1,9 +1,8 @@
 import React from "react";
 import { shallow } from "enzyme";
-import Header from "../../components/Header";
-
+import NotFoundPage from "../../components/NotFoundPage";
 
 test("should render Header", () => {
-  const wrapper = shallow(<Header />);
+  const wrapper = shallow(<NotFoundPage />);
   expect(wrapper).toMatchSnapshot();
 });
